@@ -13,30 +13,43 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 <dependencies>
-    <!--mysql 驱动包-->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>8.0.26</version>
-    </dependency>
-    <!--mybatis 包-->
     <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
-        <version>3.5.7</version>
+        <version>3.5.1</version>
     </dependency>
-    <!--Junit 测试包-->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <!-- 如果同学用的是mysql8版本，可以改为:<version>8.0.19</version>   -->
+        <version>8.0.19</version>
+    </dependency>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
+        <version>4.12</version>
     </dependency>
-    <!--logback 日志实现包-->
     <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.6</version>
+        <version>1.2.3</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper</artifactId>
+        <version>5.1.10</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.jsqlparser</groupId>
+        <artifactId>jsqlparser</artifactId>
+        <version>2.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>0.9.5.4</version>
     </dependency>
 </dependencies>
 </project>
